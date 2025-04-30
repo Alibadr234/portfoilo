@@ -1,0 +1,250 @@
+/* text animation */
+@keyframes text-slide {
+    0% { transform: translateY(0); opacity: 0; }
+    50% { transform: translateY(-10px); opacity: 0.5; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  .animate-text {
+    animation: text-slide 2s ease-in-out infinite alternate;
+  }
+  
+  /* 3D card hover */
+  .card-3d {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .card-3d:hover {
+    transform: rotateY(10deg) scale(1.03);
+  }
+  .typewriter {
+    border-right: 2px solid #3490dc;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: auto;
+    min-width: 10px;
+  }
+  #home {
+    perspective: 1000px;
+  }
+  #text-card {
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+     /* Text animation */
+@keyframes text-slide {
+    0% { transform: translateY(0); opacity: 0; }
+    50% { transform: translateY(-10px); opacity: 0.5; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+
+/* 3D card hover */
+.card-3d {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.card-3d:hover {
+    transform: rotateY(10deg) scale(1.03);
+}
+
+.typewriter {
+    border-right: 2px solid #3490dc;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: auto;
+    min-width: 10px;
+}
+
+#home {
+    perspective: 1000px;
+}
+
+#text-card {
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark Mode Styles */
+.dark {
+    /* Ensure body background is a dark gray for consistency */
+    background-color: #1f2937; /* Tailwind's gray-800 */
+    color: #e5e7eb; /* Tailwind's gray-200 for text */
+}
+
+/* Navbar Dark Mode */
+.dark nav {
+    background-color: #111827; /* Tailwind's gray-900 */
+    color: #e5e7eb; /* Light text for contrast */
+}
+
+.dark nav a {
+    color: #e5e7eb; /* Ensure links are visible */
+}
+
+.dark nav a:hover {
+    color: #60a5fa; /* Tailwind's blue-400 for hover */
+}
+
+.dark nav h1 {
+    color: #e5e7eb; /* Ensure logo text is visible */
+}
+
+/* Home Section Dark Mode */
+.dark #home {
+    background-color: #374151; /* Tailwind's gray-700 */
+    color: #e5e7eb; /* Light text */
+}
+
+.dark #home h1 {
+    color: #e5e7eb;
+}
+
+.dark #home #type {
+    color: #60a5fa; /* Blue-400 for typewriter text */
+}
+
+.dark #home img {
+    border: 2px solid #4b5563; /* Gray-600 border for images */
+}
+
+/* About Section Dark Mode */
+.dark #about {
+    background-color: #374151; /* Gray-700 */
+    color: #e5e7eb;
+}
+
+.dark #about h2,
+.dark #about h3 {
+    color: #e5e7eb;
+}
+
+.dark #about .text-blue-600 {
+    color: #60a5fa; /* Blue-400 for highlighted text */
+}
+
+.dark #about p {
+    color: #d1d5db; /* Gray-300 for paragraph text */
+}
+
+.dark #about img {
+    border-color: #4b5563; /* Gray-600 border */
+}
+
+/* Skills Section Dark Mode */
+.dark #skills {
+    background: linear-gradient(to bottom, #374151, #1f2937); /* Gradient from gray-700 to gray-800 */
+    color: #e5e7eb;
+}
+
+.dark #skills h2 {
+    color: #e5e7eb;
+}
+
+.dark #skills .bg-white {
+    background-color: #1f2937; /* Gray-800 for skill cards */
+    color: #e5e7eb;
+}
+
+.dark #skills .text-gray-700 {
+    color: #d1d5db; /* Gray-300 for skill names */
+}
+
+/* Projects Section Dark Mode */
+.dark #projects {
+    background: linear-gradient(to bottom, #1f2937, #374151); /* Gradient from gray-800 to gray-700 */
+    color: #e5e7eb;
+}
+
+.dark #projects h2 {
+    color: #e5e7eb;
+}
+
+.dark #projects .bg-white {
+    background-color: #1f2937; /* Gray-800 for project cards */
+    color: #e5e7eb;
+}
+
+.dark #projects .text-gray-800 {
+    color: #e5e7eb;
+}
+
+.dark #projects .text-blue-600 {
+    color: #60a5fa; /* Blue-400 for links */
+}
+
+.dark #projects img {
+    border: 2px solid #4b5563; /* Gray-600 border */
+}
+
+/* Contact Section Dark Mode */
+.dark #contact {
+    background-color: #374151; /* Gray-700 */
+    color: #e5e7eb;
+}
+
+.dark #contact h2 {
+    color: #e5e7eb;
+}
+
+.dark #contact p {
+    color: #d1d5db; /* Gray-300 */
+}
+
+.dark #contact .text-blue-600 {
+    color: #60a5fa; /* Blue-400 for email */
+}
+
+.dark #contact .bg-blue-600 {
+    background-color: #2563eb; /* Blue-600 for CV button */
+}
+
+.dark #contact .bg-blue-600:hover {
+    background-color: #1d4ed8; /* Blue-700 for hover */
+}
+
+.dark #contact .text-gray-800 {
+    color: #e5e7eb; /* GitHub icon */
+}
+
+.dark #contact .text-blue-700 {
+    color: #3b82f6; /* LinkedIn icon */
+}
+
+.dark #contact .text-green-600 {
+    color: #10b981; /* WhatsApp icon */
+}
+
+/* Footer Dark Mode */
+.dark footer {
+    background-color: #111827; /* Gray-900 */
+    color: #e5e7eb;
+}
