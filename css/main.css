@@ -1,0 +1,82 @@
+/* =========================
+   Text Animation (Hero Section)
+========================= */
+@keyframes text-slide {
+  0% { transform: translateY(5px); opacity: 0.6; }
+  100% { transform: translateY(-5px); opacity: 1; }
+}
+
+.animate-text {
+  animation: text-slide 2s ease-in-out infinite alternate;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #2563eb; /* Blue Data Theme */
+}
+
+/* =========================
+   Data Card Hover Effect
+========================= */
+.card-3d {
+  transition: all 0.4s ease;
+  border-radius: 16px;
+}
+
+.card-3d:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   Smooth Fade In
+========================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   KPI Counter Style
+========================= */
+.kpi-box {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.kpi-box:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   Dark Mode (Professional Look)
+========================= */
+.dark {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.dark nav {
+  background-color: #0b1220;
+}
+
+.dark section {
+  background-color: #0f172a;
+}
+
+.dark .card-3d,
+.dark .kpi-box {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  box-shadow: none;
+}
